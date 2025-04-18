@@ -1,0 +1,166 @@
+<!-- Declaring document type -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Setting character encoding -->
+    <meta charset="UTF-8">
+    <!-- Responsive design setup -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title -->
+    <title>Welcome - Sanjay Meena</title>
+
+    <!-- Internal CSS starts -->
+    <style>
+        /* Styling for the whole body */
+        body {
+            margin: 0;
+            /* Remove default margin */
+            font-family: 'SamsungOne', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* Set font family */
+            background-color: #ffffff;
+            /* White background */
+            color: #1b1b1b;
+            /* Dark text color */
+            display: flex;
+            /* Flexbox layout */
+            justify-content: center;
+            /* Center horizontally */
+            align-items: center;
+            /* Center vertically */
+            min-height: 100vh;
+            /* Full height viewport */
+            padding: 20px;
+            /* Padding around content */
+        }
+
+        /* Container styling */
+        .container {
+            max-width: 1200px;
+            /* Maximum width */
+            width: 100%;
+            /* Full width */
+            text-align: center;
+            /* Center text */
+            padding: 60px 20px;
+            /* Padding inside container */
+        }
+
+        /* Heading (h1) styling */
+        h1 {
+            font-size: 48px;
+            /* Large font size */
+            font-weight: 700;
+            /* Bold font */
+            margin-bottom: 20px;
+            /* Space below */
+            animation: fadeIn 1s ease-out;
+            /* Fade-in animation */
+        }
+
+        /* Paragraph (p) styling */
+        p {
+            font-size: 20px;
+            /* Medium font size */
+            color: #555;
+            /* Gray text color */
+            margin-bottom: 40px;
+            /* Space below */
+            animation: fadeIn 1.5s ease-out;
+            /* Fade-in animation */
+        }
+
+        /* Button link styling */
+        .button-link {
+            display: inline-flex;
+            /* Inline flex layout */
+            align-items: center;
+            /* Center items vertically */
+            justify-content: center;
+            /* Center items horizontally */
+            padding: 16px 32px;
+            /* Button padding */
+            background-color: #000;
+            /* Black background */
+            color: #fff;
+            /* White text color */
+            font-size: 18px;
+            /* Font size */
+            font-weight: 600;
+            /* Bold text */
+            text-decoration: none;
+            /* No underline */
+            border-radius: 8px;
+            /* Rounded corners */
+            transition: background-color 0.3s, transform 0.3s;
+            /* Smooth transition */
+            animation: fadeIn 2s ease-out;
+            /* Fade-in animation */
+        }
+
+        /* Button hover effect */
+        .button-link:hover {
+            background-color: #222;
+            /* Slightly lighter black */
+            transform: translateY(-3px);
+            /* Move up slightly */
+        }
+
+        /* Image inside button link */
+        .button-link img {
+            margin-right: 12px;
+            /* Space between image and text */
+        }
+
+        /* Fade-in animation keyframes */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                /* Start invisible */
+                transform: translateY(20px);
+                /* Start slightly lower */
+            }
+
+            to {
+                opacity: 1;
+                /* Fully visible */
+                transform: translateY(0);
+                /* Normal position */
+            }
+        }
+
+        /* Responsive styles for smaller screens */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+                /* Smaller heading on mobile */
+            }
+
+            p {
+                font-size: 18px;
+                /* Slightly smaller paragraph text */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Main content container -->
+    <div class="container">
+        <!-- Heading -->
+        <h1>Discover My Project</h1>
+        <!-- Paragraph -->
+        <p>Designed and Developed by Sanjay Meena</p>
+        <!-- Button link to GitHub -->
+        <a class="button-link"
+            href="https://github.com/edl-iitb/edl-25-project-submission-edl25_mon18/blob/main/README.md"
+            target="_blank">
+            <!-- GitHub logo -->
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo"
+                width="24" height="24">
+            View GitHub Repository
+        </a>
+    </div>
+</body>
+
+</html>
